@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6743"
+    tools:context=".QuizResults">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/copyright"/>
+
+    <ImageView
+        android:id="@+id/congratulationsIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/congratulations" />
+
+    <TextView
+        android:id="@+id/successTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Music is good medicine for your ears. You have successfully completed the quiz!!!"
+        android:textColor="#00008b"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/successTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctAnswers"
+            android:text="Correct Answers : 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#00C853"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incorrectAnswers"
+            android:layout_marginTop="5dp"
+            android:text="Wrong Answers : 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#DD2C00"
+            />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/homePageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/go_back_home_page"
+        android:text="Go Back To Home Page"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+
+
+
+
+</RelativeLayout>
